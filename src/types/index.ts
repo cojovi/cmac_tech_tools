@@ -1,7 +1,7 @@
 export interface Project {
   id: string;
   title: string;
-  category: 'residential' | 'commercial' | 'industrial';
+  category: 'ai' | 'infrastructure' | 'data' | 'security' | 'api' | 'development';
   beforeImage: string;
   afterImage: string;
   description: string;
@@ -15,7 +15,7 @@ export interface Service {
   title: string;
   description: string;
   icon: string;
-  category: 'residential' | 'commercial';
+  category: 'ai' | 'development' | 'data' | 'infrastructure' | 'api' | 'security';
   features: string[];
 }
 

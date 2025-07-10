@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, MessageCircle } from 'lucide-react';
+import { Menu, X, Terminal, Zap, Code } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,29 +17,28 @@ const Header: React.FC = () => {
 
   const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'Services', href: '/services' },
-    { name: 'Projects', href: '/projects' },
-    { name: 'About', href: '/about' },
+    { name: 'Tools', href: '/services' },
+    { name: 'Solutions', href: '/projects' },
+    { name: 'Docs', href: '/about' },
     { name: 'Blog', href: '/blog' },
-    { name: 'Contact', href: '/contact' }
+    { name: 'Support', href: '/contact' }
   ];
 
   return (
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-gray-900/95 backdrop-blur-sm border-b border-teal-500/20' : 'bg-transparent'
+      isScrolled ? 'bg-gray-900/95 backdrop-blur-sm border-b border-brand-primary/20' : 'bg-transparent'
     }`}>
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <img 
-              src="/mmLogoNoBG.png" 
-              alt="MM Remodelers" 
-              className="h-12 w-auto transition-transform duration-300 group-hover:scale-105"
-            />
+            <div className="relative">
+              <Code className="h-10 w-10 text-brand-primary transition-all duration-300 group-hover:scale-110" />
+              <div className="absolute -top-1 -right-1 w-3 h-3 bg-brand-accent rounded-full animate-pulse"></div>
+            </div>
             <div className="hidden sm:block">
-              <span className="text-2xl font-bold text-white tracking-tight">MM</span>
-              <span className="text-lg text-teal-400 ml-1">REMODELERS</span>
+              <span className="text-2xl font-bold text-white tracking-tight font-mono">tech.</span>
+              <span className="text-lg text-brand-primary ml-1 font-mono">CMAC</span>
             </div>
           </Link>
 
@@ -51,12 +50,12 @@ const Header: React.FC = () => {
                 to={item.href}
                 className={`text-sm font-medium transition-all duration-300 relative group ${
                   location.pathname === item.href
-                    ? 'text-teal-400'
+                    ? 'text-brand-primary'
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
                 {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-400 transition-all duration-300 group-hover:w-full" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-primary transition-all duration-300 group-hover:w-full" />
               </Link>
             ))}
           </div>
@@ -64,15 +63,15 @@ const Header: React.FC = () => {
           {/* Action Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
             <a
-              href="tel:+18173338524"
-              className="flex items-center space-x-2 px-4 py-2 border border-orange-500 text-orange-500 rounded-lg hover:bg-orange-500 hover:text-white transition-all duration-300 group"
+              href="#console"
+              className="flex items-center space-x-2 px-4 py-2 border border-brand-secondary text-brand-secondary rounded-lg hover:bg-brand-secondary hover:text-white transition-all duration-300 group"
             >
-              <Phone className="w-4 h-4 transition-transform group-hover:scale-110" />
-              <span className="text-sm font-medium">(817) 333-8524</span>
+              <Terminal className="w-4 h-4 transition-transform group-hover:scale-110" />
+              <span className="text-sm font-medium font-mono">Console</span>
             </a>
-            <button className="flex items-center space-x-2 px-6 py-2 bg-gradient-to-r from-teal-500 to-teal-600 text-white rounded-lg hover:from-teal-600 hover:to-teal-700 transition-all duration-300 shadow-lg hover:shadow-teal-500/25">
-              <MessageCircle className="w-4 h-4" />
-              <span className="text-sm font-medium">Get Quote</span>
+            <button className="flex items-center space-x-2 px-6 py-2 bg-gradient-to-r from-brand-primary to-cyber-600 text-white rounded-lg hover:from-cyber-600 hover:to-brand-secondary transition-all duration-300 shadow-lg hover:shadow-glow-cyan">
+              <Zap className="w-4 h-4" />
+              <span className="text-sm font-medium font-mono">Deploy</span>
             </button>
           </div>
 
@@ -87,7 +86,7 @@ const Header: React.FC = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 w-full bg-gray-900/98 backdrop-blur-sm border-b border-teal-500/20">
+          <div className="lg:hidden absolute top-full left-0 w-full bg-gray-900/98 backdrop-blur-sm border-b border-brand-primary/20">
             <div className="px-4 py-6 space-y-4">
               {navigation.map((item) => (
                 <Link
@@ -96,7 +95,7 @@ const Header: React.FC = () => {
                   onClick={() => setIsMenuOpen(false)}
                   className={`block text-base font-medium transition-colors ${
                     location.pathname === item.href
-                      ? 'text-teal-400'
+                      ? 'text-brand-primary'
                       : 'text-gray-300 hover:text-white'
                   }`}
                 >
@@ -105,15 +104,15 @@ const Header: React.FC = () => {
               ))}
               <div className="pt-4 space-y-3 border-t border-gray-700">
                 <a
-                  href="tel:+18173338524"
-                  className="flex items-center space-x-2 text-orange-500 hover:text-orange-400 transition-colors"
+                  href="#console"
+                  className="flex items-center space-x-2 text-brand-secondary hover:text-brand-primary transition-colors"
                 >
-                  <Phone className="w-4 h-4" />
-                  <span>(817) 333-8524</span>
+                  <Terminal className="w-4 h-4" />
+                  <span className="font-mono">Console</span>
                 </a>
-                <button className="w-full flex items-center justify-center space-x-2 px-6 py-3 bg-gradient-to-r from-teal-500 to-teal-600 text-white rounded-lg hover:from-teal-600 hover:to-teal-700 transition-all duration-300">
-                  <MessageCircle className="w-4 h-4" />
-                  <span>Get Quote</span>
+                <button className="w-full flex items-center justify-center space-x-2 px-6 py-3 bg-gradient-to-r from-brand-primary to-cyber-600 text-white rounded-lg hover:from-cyber-600 hover:to-brand-secondary transition-all duration-300">
+                  <Zap className="w-4 h-4" />
+                  <span className="font-mono">Deploy</span>
                 </button>
               </div>
             </div>

@@ -2,51 +2,51 @@ import { Service } from '../types';
 
 export const services: Service[] = [
   {
-    id: 'kitchen-remodel',
-    title: 'Kitchen Remodeling',
-    description: 'Transform your kitchen into a modern culinary workspace with custom cabinetry and premium appliances.',
-    icon: 'ChefHat',
-    category: 'residential',
-    features: ['Custom Cabinetry', 'Smart Appliances', 'Stone Countertops', 'LED Lighting Systems']
+    id: 'ai-development',
+    title: 'AI Development Suite',
+    description: 'Advanced machine learning and AI model development tools with automated deployment pipelines.',
+    icon: 'Brain',
+    category: 'ai',
+    features: ['Neural Network Designer', 'AutoML Pipeline', 'Model Optimization', 'Real-time Inference API']
   },
   {
-    id: 'bathroom-renovation',
-    title: 'Bathroom Renovation',
-    description: 'Create luxurious spa-like bathrooms with premium fixtures and innovative storage solutions.',
-    icon: 'Bath',
-    category: 'residential',
-    features: ['Luxury Fixtures', 'Custom Tilework', 'Heated Floors', 'Smart Mirrors']
+    id: 'code-analysis',
+    title: 'Code Analysis Engine',
+    description: 'Comprehensive code review and analysis platform with security vulnerability detection.',
+    icon: 'Code',
+    category: 'development',
+    features: ['Static Analysis', 'Security Scanning', 'Performance Metrics', 'Code Quality Reports']
   },
   {
-    id: 'commercial-buildout',
-    title: 'Commercial Build-Out',
-    description: 'Professional commercial spaces designed for productivity and brand representation.',
-    icon: 'Building2',
-    category: 'commercial',
-    features: ['Space Planning', 'ADA Compliance', 'Technology Integration', 'Brand Integration']
+    id: 'data-processing',
+    title: 'Data Processing Platform',
+    description: 'Scalable data transformation and analytics engine for enterprise-grade applications.',
+    icon: 'Database',
+    category: 'data',
+    features: ['ETL Pipelines', 'Real-time Processing', 'Data Visualization', 'API Integration']
   },
   {
-    id: 'home-addition',
-    title: 'Home Additions',
-    description: 'Expand your living space with seamless additions that blend with existing architecture.',
-    icon: 'Home',
-    category: 'residential',
-    features: ['Structural Engineering', 'Permit Management', 'Seamless Integration', 'Energy Efficiency']
+    id: 'cloud-automation',
+    title: 'Cloud Automation Tools',
+    description: 'Infrastructure as code and deployment automation for multi-cloud environments.',
+    icon: 'Cloud',
+    category: 'infrastructure',
+    features: ['Infrastructure as Code', 'Auto-scaling', 'Monitoring & Alerts', 'Cost Optimization']
   },
   {
-    id: 'outdoor-living',
-    title: 'Outdoor Living',
-    description: 'Create stunning outdoor entertaining spaces with decks, patios, and outdoor kitchens.',
-    icon: 'Trees',
-    category: 'residential',
-    features: ['Deck Construction', 'Outdoor Kitchens', 'Fire Features', 'Landscape Integration']
+    id: 'api-gateway',
+    title: 'API Gateway & Management',
+    description: 'Enterprise API management with advanced routing, authentication, and monitoring.',
+    icon: 'Network',
+    category: 'api',
+    features: ['Rate Limiting', 'Authentication', 'API Analytics', 'Version Management']
   },
   {
-    id: 'industrial-renovation',
-    title: 'Industrial Renovation',
-    description: 'Modernize industrial facilities while maintaining operational efficiency and safety standards.',
-    icon: 'Factory',
-    category: 'commercial',
-    features: ['Safety Compliance', 'Minimal Downtime', 'Equipment Integration', 'Workflow Optimization']
+    id: 'security-tools',
+    title: 'Security & Compliance',
+    description: 'Advanced security scanning and compliance monitoring for modern applications.',
+    icon: 'Shield',
+    category: 'security',
+    features: ['Vulnerability Assessment', 'Compliance Checks', 'Threat Detection', 'Security Auditing']
   }
 ];

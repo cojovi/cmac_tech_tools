@@ -8,16 +8,16 @@ import Services from './pages/Services';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-gray-950 text-white font-inter">
+      <div className="min-h-screen bg-brand-darker text-white font-inter">
         <Header />
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/projects" element={<div className="pt-20 p-8 text-center">Projects page coming soon...</div>} />
-            <Route path="/about" element={<div className="pt-20 p-8 text-center">About page coming soon...</div>} />
-            <Route path="/blog" element={<div className="pt-20 p-8 text-center">Blog page coming soon...</div>} />
-            <Route path="/contact" element={<div className="pt-20 p-8 text-center">Contact page coming soon...</div>} />
+            <Route path="/projects" element={<div className="pt-20 p-8 text-center font-mono">Solutions page coming soon...</div>} />
+            <Route path="/about" element={<div className="pt-20 p-8 text-center font-mono">Documentation coming soon...</div>} />
+            <Route path="/blog" element={<div className="pt-20 p-8 text-center font-mono">Blog page coming soon...</div>} />
+            <Route path="/contact" element={<div className="pt-20 p-8 text-center font-mono">Support page coming soon...</div>} />
           </Routes>
         </main>
         <Footer />

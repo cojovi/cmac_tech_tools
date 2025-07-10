@@ -1,34 +1,34 @@
 import React from 'react';
-import { Phone, MessageCircle, Calendar, ArrowRight } from 'lucide-react';
+import { Terminal, Zap, Code, ArrowRight } from 'lucide-react';
 
 const CTASection: React.FC = () => {
   const ctaOptions = [
     {
-      icon: Phone,
-      title: 'Call Now',
-      description: 'Speak directly with our experts',
-      action: 'tel:+18173338524',
-      buttonText: '(817) 333-8524',
+      icon: Terminal,
+      title: 'API Console',
+      description: 'Direct access to our development APIs',
+      action: '#console',
+      buttonText: 'Open Console',
       primary: false,
-      color: 'orange'
+      color: 'secondary'
     },
     {
-      icon: MessageCircle,
-      title: 'Get Quote',
-      description: 'Free consultation & estimate',
-      action: '#quote',
-      buttonText: 'Request Quote',
+      icon: Zap,
+      title: 'Deploy Now',
+      description: 'Instant deployment and integration',
+      action: '#deploy',
+      buttonText: 'Start Deploy',
       primary: true,
-      color: 'teal'
+      color: 'primary'
     },
     {
-      icon: Calendar,
-      title: 'Schedule',
-      description: 'Book a consultation visit',
-      action: '#schedule',
-      buttonText: 'Schedule Visit',
+      icon: Code,
+      title: 'Documentation',
+      description: 'Complete API docs and tutorials',
+      action: '#docs',
+      buttonText: 'View Docs',
       primary: false,
-      color: 'lime'
+      color: 'accent'
     }
   ];
 
@@ -36,42 +36,64 @@ const CTASection: React.FC = () => {
     <section className="py-20 bg-gradient-to-br from-gray-900 via-gray-950 to-gray-900 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 left-0 w-96 h-96 bg-brand-primary/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-brand-secondary/10 rounded-full blur-3xl"></div>
+      </div>
+
+      {/* Circuit Pattern */}
+      <div className="absolute inset-0 circuit-pattern opacity-5"></div>
+
+      {/* Matrix Rain */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="matrix-rain">
+          {Array.from({ length: 15 }).map((_, i) => (
+            <div
+              key={i}
+              className="matrix-char"
+              style={{
+                left: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 20}s`,
+                animationDuration: `${20 + Math.random() * 10}s`
+              }}
+            >
+              {['>', '<', '/', '\\', '|', '{', '}', '[', ']'][Math.floor(Math.random() * 9)]}
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Main CTA Content */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            Ready to Transform
+            Ready to Build
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-orange-400 to-lime-400">
-              Your Space?
+            <span className="text-transparent bg-clip-text bg-gradient-cyber">
+              The Future?
             </span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-8">
-            Join hundreds of satisfied clients who've experienced the MM Remodelers difference. 
-            Let's bring your vision to life with industrial-strength construction and modern design.
+            Join thousands of developers who've experienced the tech.cmac.tool difference. 
+            Let's bring your vision to life with AI-powered development and intelligent automation.
           </p>
           
           {/* Trust Indicators */}
           <div className="flex flex-wrap justify-center items-center gap-8 text-sm text-gray-500 mb-12">
             <div className="flex items-center space-x-2">
-              <div className="w-2 h-2 bg-teal-400 rounded-full"></div>
-              <span>Licensed & Insured</span>
+              <div className="w-2 h-2 bg-brand-primary rounded-full"></div>
+              <span>SOC 2 Compliant</span>
             </div>
             <div className="flex items-center space-x-2">
-              <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
-              <span>15+ Years Experience</span>
+              <div className="w-2 h-2 bg-brand-secondary rounded-full"></div>
+              <span>99.9% Uptime SLA</span>
             </div>
             <div className="flex items-center space-x-2">
-              <div className="w-2 h-2 bg-lime-400 rounded-full"></div>
-              <span>500+ Projects Completed</span>
+              <div className="w-2 h-2 bg-brand-accent rounded-full"></div>
+              <span>1M+ API Calls Daily</span>
             </div>
             <div className="flex items-center space-x-2">
-              <div className="w-2 h-2 bg-teal-400 rounded-full"></div>
-              <span>100% Satisfaction Guarantee</span>
+              <div className="w-2 h-2 bg-brand-primary rounded-full"></div>
+              <span>24/7 Global Support</span>
             </div>
           </div>
         </div>
@@ -83,29 +105,29 @@ const CTASection: React.FC = () => {
               key={index}
               className={`group relative p-8 rounded-2xl border transition-all duration-500 hover:scale-105 ${
                 option.primary
-                  ? 'bg-gradient-to-br from-teal-500/20 to-teal-600/20 border-teal-500/50 hover:border-teal-400'
+                  ? 'bg-gradient-to-br from-brand-primary/20 to-brand-primary/30 border-brand-primary/50 hover:border-brand-primary'
                   : 'bg-gray-800/50 border-gray-700 hover:border-gray-600'
               } backdrop-blur-sm`}
             >
               {/* Icon */}
               <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300 ${
-                option.color === 'teal'
-                  ? 'bg-teal-500/20 border border-teal-500/30 group-hover:bg-teal-500/30'
-                  : option.color === 'orange'
-                  ? 'bg-orange-500/20 border border-orange-500/30 group-hover:bg-orange-500/30'
-                  : 'bg-lime-500/20 border border-lime-500/30 group-hover:bg-lime-500/30'
+                option.color === 'primary'
+                  ? 'bg-brand-primary/20 border border-brand-primary/30 group-hover:bg-brand-primary/30'
+                  : option.color === 'secondary'
+                  ? 'bg-brand-secondary/20 border border-brand-secondary/30 group-hover:bg-brand-secondary/30'
+                  : 'bg-brand-accent/20 border border-brand-accent/30 group-hover:bg-brand-accent/30'
               }`}>
                 <option.icon className={`w-8 h-8 transition-all duration-300 group-hover:scale-110 ${
-                  option.color === 'teal'
-                    ? 'text-teal-400'
-                    : option.color === 'orange'
-                    ? 'text-orange-400'
-                    : 'text-lime-400'
+                  option.color === 'primary'
+                    ? 'text-brand-primary'
+                    : option.color === 'secondary'
+                    ? 'text-brand-secondary'
+                    : 'text-brand-accent'
                 }`} />
               </div>
 
               {/* Content */}
-              <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors">
+              <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-brand-primary transition-colors">
                 {option.title}
               </h3>
               <p className="text-gray-400 mb-6 leading-relaxed">
@@ -117,10 +139,10 @@ const CTASection: React.FC = () => {
                 href={option.action}
                 className={`inline-flex items-center justify-center w-full px-6 py-4 rounded-lg font-semibold transition-all duration-300 group ${
                   option.primary
-                    ? 'bg-gradient-to-r from-teal-500 to-teal-600 text-white hover:from-teal-600 hover:to-teal-700 shadow-lg hover:shadow-teal-500/25'
-                    : option.color === 'orange'
-                    ? 'border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white'
-                    : 'border-2 border-lime-500 text-lime-500 hover:bg-lime-500 hover:text-gray-900'
+                    ? 'bg-gradient-to-r from-brand-primary to-cyber-600 text-white hover:from-cyber-600 hover:to-brand-secondary shadow-lg hover:shadow-glow-cyan'
+                    : option.color === 'secondary'
+                    ? 'border-2 border-brand-secondary text-brand-secondary hover:bg-brand-secondary hover:text-white'
+                    : 'border-2 border-brand-accent text-brand-accent hover:bg-brand-accent hover:text-gray-900'
                 }`}
               >
                 <span>{option.buttonText}</span>
@@ -129,22 +151,22 @@ const CTASection: React.FC = () => {
 
               {/* Glow Effect */}
               {option.primary && (
-                <div className="absolute inset-0 bg-gradient-to-br from-teal-500/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
               )}
             </div>
           ))}
         </div>
 
-        {/* Emergency Contact */}
-        <div className="text-center p-8 rounded-2xl bg-red-500/10 border border-red-500/20">
-          <h3 className="text-xl font-bold text-white mb-2">Emergency Service Available</h3>
-          <p className="text-gray-400 mb-4">24/7 support for urgent construction emergencies</p>
+        {/* System Status */}
+        <div className="text-center p-8 rounded-2xl bg-brand-accent/10 border border-brand-accent/20">
+          <h3 className="text-xl font-bold text-white mb-2 font-mono">System Status: Operational</h3>
+          <p className="text-gray-400 mb-4">99.9% uptime with 24/7 monitoring and support</p>
           <a
-            href="tel:+18173338524"
-            className="inline-flex items-center space-x-2 px-6 py-3 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors font-medium"
+            href="#status"
+            className="inline-flex items-center space-x-2 px-6 py-3 bg-brand-accent text-gray-900 rounded-lg hover:bg-brand-accent/80 transition-colors font-medium font-mono"
           >
-            <Phone className="w-5 h-5" />
-            <span>Emergency Hotline</span>
+            <Zap className="w-5 h-5" />
+            <span>View Status Page</span>
           </a>
         </div>
       </div>

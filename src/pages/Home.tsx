@@ -7,7 +7,7 @@ import CTASection from '../components/home/CTASection';
 
 const Home: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-950">
+    <div className="min-h-screen bg-brand-darker">
       <Hero />
       <ServicesPreview />
       <ProjectsGallery />

@@ -3,31 +3,32 @@ import { Testimonial } from '../types';
 export const testimonials: Testimonial[] = [
   {
     id: '1',
-    name: 'Sarah Mitchell',
-    role: 'Homeowner',
-    content: 'MM Remodelers transformed our outdated kitchen into a modern masterpiece. Their attention to detail and use of high-quality materials exceeded our expectations.',
+    name: 'Alex Chen',
+    role: 'CTO',
+    company: 'DataFlow Technologies',
+    content: 'Tech.CMAC Tool revolutionized our development pipeline. The AI-powered code analysis caught critical issues before deployment and improved our code quality by 40%.',
     rating: 5,
-    image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg',
-    project: 'Kitchen Renovation'
+    image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg',
+    project: 'AI Development Suite'
   },
   {
     id: '2',
-    name: 'David Chen',
-    role: 'CEO',
-    company: 'TechFlow Solutions',
-    content: 'The commercial build-out for our new headquarters was completed on time and within budget. The industrial aesthetic perfectly matches our company culture.',
+    name: 'Sarah Martinez',
+    role: 'Lead Developer',
+    company: 'CloudVision Inc.',
+    content: 'The automation tools saved us weeks of manual work. Infrastructure deployment that used to take days now happens in minutes with zero downtime.',
     rating: 5,
-    image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg',
-    project: 'Commercial Office'
+    image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg',
+    project: 'Cloud Automation Platform'
   },
   {
     id: '3',
-    name: 'Maria Rodriguez',
-    role: 'Property Manager',
-    company: 'Elite Properties',
-    content: 'Working with MM Remodelers on multiple properties has been exceptional. Their industrial approach to residential spaces creates unique, high-value outcomes.',
+    name: 'Marcus Johnson',
+    role: 'DevOps Engineer',
+    company: 'SecureNet Solutions',
+    content: 'The security analysis and compliance monitoring features are outstanding. We achieved SOC 2 compliance 60% faster than anticipated.',
     rating: 5,
-    image: 'https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg',
-    project: 'Multi-Unit Renovation'
+    image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg',
+    project: 'Security & Compliance Suite'
   }
 ];
