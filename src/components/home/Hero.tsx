@@ -6,29 +6,29 @@ const Hero: React.FC = () => {
   
   const slides = [
     {
-      image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg',
+      image: '/image.png',
       title: 'AI-Powered',
-      subtitle: 'Development Suite',
-      description: 'Transform your development workflow with intelligent automation and cutting-edge AI tools'
+      subtitle: 'Phone Call Minions',
+      description: 'Advanced machine learning and neural network powered ai agents for answering systems or cold calling'
     },
     {
-      image: 'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg',
-      title: 'Cloud-Native',
-      subtitle: 'Infrastructure',
-      description: 'From microservices to enterprise platforms, we build for scale and reliability'
+      image: '/image.png',
+      title: 'Intelligent',
+      subtitle: 'Call Automation',
+      description: 'Sophisticated AI agents that handle customer calls with human-like conversation abilities'
     },
     {
-      image: 'https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg',
-      title: 'Real-time',
-      subtitle: 'Analytics Engine',
-      description: 'Advanced data processing meets intelligent monitoring and automated optimization'
+      image: '/image.png',
+      title: '24/7',
+      subtitle: 'Virtual Assistants',
+      description: 'Never miss a call again with AI minions that work around the clock for your business'
     }
   ];
 
   const stats = [
-    { icon: Cpu, value: '1M+', label: 'API Requests/Day' },
-    { icon: Code, value: '99.9%', label: 'Uptime SLA' },
-    { icon: Zap, value: '24/7', label: 'Global Support' }
+    { icon: Cpu, value: '10K+', label: 'Calls Handled/Day' },
+    { icon: Code, value: '95%', label: 'Customer Satisfaction' },
+    { icon: Zap, value: '24/7', label: 'AI Availability' }
   ];
 
   useEffect(() => {

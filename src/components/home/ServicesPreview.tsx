@@ -6,45 +6,45 @@ const ServicesPreview: React.FC = () => {
   const services = [
     {
       icon: Brain,
-      title: 'AI Development Suite',
-      description: 'Advanced machine learning and neural network development platform',
-      image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg',
+      title: 'AI Phone Call Agents',
+      description: 'Advanced machine learning and neural network powered ai agents for answering systems',
+      image: '/image.png',
       category: 'ai'
     },
     {
       icon: Code,
-      title: 'Code Analysis Engine',
-      description: 'Comprehensive code review and security vulnerability detection',
-      image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg',
-      category: 'development'
+      title: 'Cold Calling Automation',
+      description: 'Intelligent cold calling systems that engage prospects with natural conversation',
+      image: '/image.png',
+      category: 'automation'
     },
     {
       icon: Database,
-      title: 'Data Processing Platform',
-      description: 'Real-time data transformation and analytics engine',
-      image: 'https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg',
-      category: 'data'
+      title: 'Call Analytics Platform',
+      description: 'Real-time call analytics and performance tracking for your AI agents',
+      image: '/image.png',
+      category: 'analytics'
     },
     {
       icon: Cloud,
-      title: 'Cloud Automation Tools',
-      description: 'Infrastructure as code and deployment automation',
-      image: 'https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg',
-      category: 'infrastructure'
+      title: 'Voice Recognition System',
+      description: 'Advanced voice processing and natural language understanding capabilities',
+      image: '/image.png',
+      category: 'voice'
     },
     {
       icon: Network,
-      title: 'API Gateway & Management',
-      description: 'Enterprise API management with advanced routing',
-      image: 'https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg',
-      category: 'api'
+      title: 'Lead Generation Tools',
+      description: 'AI-powered lead qualification and appointment setting automation',
+      image: '/image.png',
+      category: 'leads'
     },
     {
       icon: Shield,
-      title: 'Security & Compliance',
-      description: 'Advanced security scanning and compliance monitoring',
-      image: 'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg',
-      category: 'security'
+      title: 'Customer Support Bots',
+      description: 'Intelligent customer service automation with escalation capabilities',
+      image: '/image.png',
+      category: 'support'
     }
   ];
 
@@ -54,11 +54,11 @@ const ServicesPreview: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            Our <span className="text-brand-primary">Tools</span>
+            Our <span className="text-brand-primary">AI Minions</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            From AI development to cloud infrastructure, we deliver enterprise-grade 
-            tools with cutting-edge technology and intelligent automation.
+            From phone answering to cold calling, we deliver intelligent AI agents 
+            with cutting-edge technology and natural conversation abilities.
           </p>
         </div>
 
@@ -88,7 +88,7 @@ const ServicesPreview: React.FC = () => {
                   <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium ${
                     service.category === 'ai'
                       ? 'bg-brand-primary/20 text-brand-primary border border-brand-primary/30'
-                      : service.category === 'development'
+                      : service.category === 'automation'
                       ? 'bg-brand-secondary/20 text-brand-secondary border border-brand-secondary/30'
                       : 'bg-brand-accent/20 text-brand-accent border border-brand-accent/30'
                   }`}>
@@ -134,7 +134,7 @@ const ServicesPreview: React.FC = () => {
             to="/services"
             className="inline-flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-brand-primary to-cyber-600 text-white rounded-lg hover:from-cyber-600 hover:to-brand-secondary transition-all duration-300 shadow-lg hover:shadow-glow-cyan transform hover:scale-105 group"
           >
-            <span className="text-lg font-semibold font-mono">Explore All Tools</span>
+            <span className="text-lg font-semibold font-mono">Meet Your AI Minions</span>
             <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
           </Link>
         </div>

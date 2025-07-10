@@ -5,26 +5,26 @@ const CTASection: React.FC = () => {
   const ctaOptions = [
     {
       icon: Terminal,
-      title: 'API Console',
-      description: 'Direct access to our development APIs',
+      title: 'AI Dashboard',
+      description: 'Direct access to your AI phone call minions',
       action: '#console',
-      buttonText: 'Open Console',
+      buttonText: 'Open Dashboard',
       primary: false,
       color: 'secondary'
     },
     {
       icon: Zap,
-      title: 'Deploy Now',
-      description: 'Instant deployment and integration',
+      title: 'Start Calling',
+      description: 'Activate your AI agents instantly',
       action: '#deploy',
-      buttonText: 'Start Deploy',
+      buttonText: 'Activate AI',
       primary: true,
       color: 'primary'
     },
     {
       icon: Code,
       title: 'Documentation',
-      description: 'Complete API docs and tutorials',
+      description: 'Complete setup guides and training materials',
       action: '#docs',
       buttonText: 'View Docs',
       primary: false,
@@ -73,8 +73,8 @@ const CTASection: React.FC = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-8">
-            Join thousands of developers who've experienced the tech.cmac.tool difference. 
-            Let's bring your vision to life with AI-powered development and intelligent automation.
+            Join thousands of businesses who've experienced the Cody's AI difference. 
+            Let's transform your phone operations with AI-powered call agents and intelligent automation.
           </p>
           
           {/* Trust Indicators */}

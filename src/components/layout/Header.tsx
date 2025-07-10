@@ -37,8 +37,8 @@ const Header: React.FC = () => {
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-brand-accent rounded-full animate-pulse"></div>
             </div>
             <div className="hidden sm:block">
-              <span className="text-2xl font-bold text-white tracking-tight font-mono">tech.</span>
-              <span className="text-lg text-brand-primary ml-1 font-mono">CMAC</span>
+              <span className="text-2xl font-bold text-white tracking-tight font-mono">Cody's</span>
+              <span className="text-lg text-brand-primary ml-1 font-mono">ai</span>
             </div>
           </Link>
 

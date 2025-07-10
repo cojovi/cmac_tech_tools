@@ -17,22 +17,22 @@ const Footer: React.FC = () => {
                 <div className="absolute -top-1 -right-1 w-3 h-3 bg-brand-accent rounded-full animate-pulse"></div>
               </div>
               <div>
-                <span className="text-xl font-bold text-white font-mono">tech.</span>
-                <span className="text-sm text-brand-primary ml-1 font-mono">CMAC</span>
+                <span className="text-xl font-bold text-white font-mono">Cody's</span>
+                <span className="text-sm text-brand-primary ml-1 font-mono">ai</span>
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Advanced AI and development platform powering the next generation of software solutions. 
-              Building intelligent tools for modern developers.
+              Advanced machine learning and neural network powered ai agents for answering systems or cold calling.
+              Building intelligent phone call automation for modern businesses.
             </p>
             <div className="flex space-x-4">
-              <a href="https://github.com/tech-cmac" className="text-gray-400 hover:text-brand-primary transition-colors">
+              <a href="https://github.com/codys-ai" className="text-gray-400 hover:text-brand-primary transition-colors">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="https://twitter.com/techcmac" className="text-gray-400 hover:text-brand-primary transition-colors">
+              <a href="https://twitter.com/codysai" className="text-gray-400 hover:text-brand-primary transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="https://linkedin.com/company/tech-cmac" className="text-gray-400 hover:text-brand-primary transition-colors">
+              <a href="https://linkedin.com/company/codys-ai" className="text-gray-400 hover:text-brand-primary transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
@@ -43,8 +43,8 @@ const Footer: React.FC = () => {
             <h3 className="text-white font-semibold mb-6">Platform</h3>
             <ul className="space-y-3">
               {[
-                { name: 'Tools', href: '/services' },
-                { name: 'Solutions', href: '/projects' },
+                { name: 'AI Agents', href: '/services' },
+                { name: 'Call Solutions', href: '/projects' },
                 { name: 'Documentation', href: '/about' },
                 { name: 'Blog', href: '/blog' },
                 { name: 'Support', href: '/contact' }
@@ -63,15 +63,15 @@ const Footer: React.FC = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-white font-semibold mb-6">Tools</h3>
+            <h3 className="text-white font-semibold mb-6">AI Services</h3>
             <ul className="space-y-3">
               {[
-                'AI Development Suite',
-                'Code Analysis Engine',
-                'Data Processing Platform',
-                'Cloud Automation Tools',
-                'API Gateway & Management',
-                'Security & Compliance'
+                'AI Phone Call Agents',
+                'Cold Calling Automation',
+                'Voice Recognition System',
+                'Call Analytics Platform',
+                'Lead Generation Tools',
+                'Customer Support Bots'
               ].map((service) => (
                 <li key={service}>
                   <span className="text-gray-400 text-sm hover:text-brand-primary transition-colors cursor-pointer">
@@ -102,7 +102,7 @@ const Footer: React.FC = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-brand-primary flex-shrink-0" />
                 <a href="mailto:support@tech.cmac.tool" className="text-gray-400 text-sm hover:text-brand-primary transition-colors">
-                  support@tech.cmac.tool
+                  support@codysai.com
                 </a>
               </div>
               <div className="flex items-start space-x-3">
@@ -121,7 +121,7 @@ const Footer: React.FC = () => {
         <div className="mt-12 pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
-              © {currentYear} tech.cmac.tool | Advanced AI Platform. All rights reserved.
+              © {currentYear} Cody's AI Phone Call Minions | AI Calling Solutions. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-brand-primary transition-colors">
