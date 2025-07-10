@@ -15,35 +15,35 @@ const ServicesPreview: React.FC = () => {
       icon: Code,
       title: 'Cold Calling Automation',
       description: 'Intelligent cold calling systems that engage prospects with natural conversation',
-      image: '/image.png',
+      image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg',
       category: 'automation'
     },
     {
       icon: Database,
       title: 'Call Analytics Platform',
       description: 'Real-time call analytics and performance tracking for your AI agents',
-      image: '/image.png',
+      image: 'https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg',
       category: 'analytics'
     },
     {
       icon: Cloud,
       title: 'Voice Recognition System',
       description: 'Advanced voice processing and natural language understanding capabilities',
-      image: '/image.png',
+      image: 'https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg',
       category: 'voice'
     },
     {
       icon: Network,
       title: 'Lead Generation Tools',
       description: 'AI-powered lead qualification and appointment setting automation',
-      image: '/image.png',
+      image: 'https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg',
       category: 'leads'
     },
     {
       icon: Shield,
       title: 'Customer Support Bots',
       description: 'Intelligent customer service automation with escalation capabilities',
-      image: '/image.png',
+      image: 'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg',
       category: 'support'
     }
   ];
