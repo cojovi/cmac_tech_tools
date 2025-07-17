@@ -20,9 +20,9 @@ const ServicesPreview: React.FC = () => {
     },
     {
       icon: Database,
-      title: 'Call Analytics Platform',
-      description: 'Real-time call analytics and performance tracking for your AI agents',
-      image: 'https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg',
+      title: 'Codys AI Route Finagler',
+      description: 'Route your trip more efficiently with AI',
+      image: '/image copy.png',
       category: 'analytics'
     },
     {
