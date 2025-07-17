@@ -8,7 +8,7 @@ const ServicesPreview: React.FC = () => {
       icon: Brain,
       title: 'AI Phone Call Agents',
       description: 'Advanced machine learning and neural network powered ai agents for answering systems',
-      image: '/image.png',
+      image: '/CleanShot 2025-07-10 at 11.33.16.png',
       category: 'ai'
     },
     {
@@ -54,11 +54,10 @@ const ServicesPreview: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            Our <span className="text-brand-primary">AI Minions</span>
+            <span className="text-brand-primary">Cody's AI Phone Call Minions</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            From phone answering to cold calling, we deliver intelligent AI agents 
-            with cutting-edge technology and natural conversation abilities.
+            Advanced machine learning and neural network powered ai agents for answering systems or cold calling.
           </p>
         </div>
 
