@@ -66,7 +66,14 @@ const ServicesPreview: React.FC = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 hover:border-brand-primary/50 transition-all duration-500 transform hover:scale-105"
+              className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 hover:border-brand-primary/50 transition-all duration-500 transform hover:scale-105 cursor-pointer"
+              onClick={() => {
+                if (service.title === 'AI Phone Call Agents' || service.title === 'Cold Calling Automation') {
+                  window.open('https://cojovi.my.canva.site/codys-ai-automate-call', '_blank');
+                } else if (service.title === 'Codys AI Route Finagler') {
+                  window.open('https://codys-ai-route-finagler-149155374302.us-west1.run.app/', '_blank');
+                }
+              }}
             >
               {/* Background Image */}
               <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity duration-500">
