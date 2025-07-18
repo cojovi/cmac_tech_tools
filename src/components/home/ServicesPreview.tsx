@@ -34,7 +34,7 @@ const ServicesPreview: React.FC = () => {
     },
     {
       icon: Network,
-      title: 'Lead Generation Tools',
+      title: 'Corbin | The AI Door to Door Mentor',
       description: 'AI-powered lead qualification and appointment setting automation',
       image: 'https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg',
       category: 'leads'
