@@ -2,7 +2,6 @@ import React from 'react';
 import Hero from '../components/home/Hero';
 import ServicesPreview from '../components/home/ServicesPreview';
 import ProjectsGallery from '../components/home/ProjectsGallery';
-import Testimonials from '../components/home/Testimonials';
 import CTASection from '../components/home/CTASection';
 
 const Home: React.FC = () => {
@@ -11,7 +10,6 @@ const Home: React.FC = () => {
       <Hero />
       <ServicesPreview />
       <ProjectsGallery />
-      <Testimonials />
       <CTASection />
     </div>
   );
